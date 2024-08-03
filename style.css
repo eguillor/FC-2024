@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(103, 58, 183, 0.7);
+    border-radius: 10px;
+}
+
 body {
     background: url(https://subtlepatterns.com/patterns/noise_lines.png);
     font-family: 'Pacifico', cursive;
@@ -17,11 +28,7 @@ body {
     bottom: 0;
 }
 
-.container {
-    position: relative;
-    margin: 120px auto 0 auto;
-    width: 700px;
-}
+
 
 .ico {
     display: block;
@@ -55,18 +62,12 @@ body {
 }
 
 .ico:before,
-.ico:after,
-.ico2:before,
-.ico2:after {
+.ico:after {
     position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .ico:before,
-.ico:after,
-.ico2:before,
-.ico2:after {
+.ico:after {
     display: block;
     font-size: 20em;
     color: #ff4081;
@@ -77,10 +78,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.ico2:before,
-.ico2:after {
-    color: #e91e63;
-}
+
 
 .ico:before {
     z-index: 3;
